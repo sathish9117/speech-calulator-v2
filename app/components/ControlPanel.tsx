@@ -41,7 +41,7 @@ const ControlPanel: React.FC<Props> = ({
         className={`w-10 h-10 rounded-full flex items-center justify-center transition ${
           listening
             ? "bg-red-500 animate-pulse"
-            : "bg-green-500 hover:bg-green-600"
+            : "transition bg-purple-600/50 hover:bg-purple-600/70"
         }`}
         title="Speak an expression"
       >

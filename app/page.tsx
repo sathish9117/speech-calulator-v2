@@ -35,7 +35,7 @@ export default function App() {
 
   return (
     <>
-      <div className="flex items-center justify-center min-h-screen p-4 bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-700 animate-gradient">
+      <div className="flex items-center justify-center min-h-screen p-4 bg-gradient-to-br from-gray-900 via-black to-gray-900">
         <div className="w-full max-w-sm mx-auto bg-black/30 backdrop-blur-xl rounded-3xl p-4 sm:p-6 shadow-2xl border border-white/20">
           <CalculatorDisplay
             expression={expression}
@@ -77,14 +77,6 @@ export default function App() {
           }}
         />
       )}
-
-      {/* Global Styles for Animations */}
-      <style>{`
-                .animate-gradient { background-size: 200% 200%; animation: gradient 15s ease infinite; }
-                @keyframes gradient { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
-                .animate-fadeIn { animation: fadeIn 0.3s ease-in-out; }
-                @keyframes fadeIn { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
-            `}</style>
     </>
   );
 }
