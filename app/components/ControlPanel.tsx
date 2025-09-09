@@ -38,7 +38,7 @@ const ControlPanel: React.FC<Props> = ({
       </button>
       <button
         onClick={onStartListening}
-        className={`w-10 h-10 rounded-full flex items-center justify-center transition ${
+        className={` flex-3 w-10 h-10 rounded-lg flex items-center justify-center transition ${
           listening
             ? "bg-red-500 animate-pulse"
             : "transition bg-purple-600/50 hover:bg-purple-600/70"
