@@ -21,7 +21,10 @@ export const useCalculator = (speak: (text: string) => void) => {
             speechExpression?: string;
           }
     ) => {
-      const { value, action, fromSpeech, speechExpression } = input;
+      const { value, action } = input as { value?: string; action?: string };
+      const fromSpeech = (input as { fromSpeech?: boolean }).fromSpeech;
+      const speechExpression = (input as { speechExpression?: string })
+        .speechExpression;
 
       if (action) {
         if (action !== "history") setIsResultDisplayed(false);
